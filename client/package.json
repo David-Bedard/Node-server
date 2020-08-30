@@ -1,0 +1,21 @@
+{
+    "name": "server",
+    "version": "0.0.1",
+    "description": "",
+    "main": "src/client.ts",
+    "scripts": {
+        "dev": "ts-node-dev src/client.ts",
+        "build": "tsc -p ./tsconfig.json",
+        "prestart": "npm run build",
+        "start": "node dist/client.js"
+    },
+    "author": "David Bedard",
+    "license": "MIT",
+    "devDependencies": {
+        "ts-node-dev": "^1.0.0-pre.32"
+    },
+    "dependencies": {
+        "@types/node": "^14.6.2",
+        "typescript": "^2.9.2"
+    }
+}
